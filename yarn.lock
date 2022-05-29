@@ -590,7 +590,7 @@
 
 "hexo-deployer-git@^3.0.0":
   "integrity" "sha512-U2Xewjab+rvUDNTcuYYnOxitkDXL3f5VMUH32jKDHs3OC4YFVGRoEaTTDVHskqr3KRi78Wohjc6BSRHOoG3oxA=="
-  "resolved" "https://registry.npmmirror.com/hexo-deployer-git/-/hexo-deployer-git-3.0.0.tgz"
+  "resolved" "https://registry.npmjs.org/hexo-deployer-git/-/hexo-deployer-git-3.0.0.tgz"
   "version" "3.0.0"
   dependencies:
     "bluebird" "^3.5.0"
@@ -732,7 +732,7 @@
 
 "hexo@^6.2.0":
   "integrity" "sha512-HOpt3vUOz/T0rWTDb/CtWuBJwYARPwbpvGwsaz0RPu/l5I6AmKE+UA0lJZf14iPS3JIt/HiOcTZ3Qz22A+PE8w=="
-  "resolved" "https://registry.npmmirror.com/hexo/-/hexo-6.2.0.tgz"
+  "resolved" "https://registry.npmjs.org/hexo/-/hexo-6.2.0.tgz"
   "version" "6.2.0"
   dependencies:
     "abbrev" "^1.1.1"
