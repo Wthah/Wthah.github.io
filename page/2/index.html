@@ -1,7 +1,331 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Megumi - Megumi</title><meta name="author" content="Megumi"><meta name="copyright" content="Megumi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Megumi">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Megumi">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/megumi.png">
+<meta property="article:author" content="Megumi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/megumi.png"><link rel="shortcut icon" href="/img/megumi.png"><link rel="canonical" href="http://example.com/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Megumi',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-05-29 16:13:52'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  include ./includes/mixins/post-ui.pug
-  #recent-posts.recent-posts
-    +postUI
-    include includes/pagination.pug
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Megumi" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/megumi.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/2.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Megumi</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Megumi</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/Wthah" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2425846572@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/03/26/JVM/" title="JVM"><img class="post_bg" src="/img/JVM/jvm.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JVM"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/26/JVM/" title="JVM">JVM</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-26T03:21:25.000Z" title="发表于 2022-03-26 11:21:25">2022-03-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-13T15:17:29.622Z" title="更新于 2022-04-13 23:17:29">2022-04-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/jvm/">jvm</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/jvm/">jvm</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">JVM
+引用博客: https://blog.csdn.net/weixin_50280576/article/details/113742011
+
+前言什么是JVM？
+定义：Java Vitual Machine，java程序的运行环境
+
+好处：
+
+一次编译，处处执行
+自动的内存管理，垃圾回收机制
+数组下标越界检查
+
+
+比较（JVM、JRE、JDK）
+
+
+
+学习路线
+程序计数器
+作用：用于保存JVM中下一条所要执行指令的地址
+特点：
+线程私用：CPU会为每一个线程分配时间片，当当前线程的时间排尿使用完后，CPU就会去执行另一个代码，程序计数器是每一个线程所私有的，当另一个线程的时间片用完后，又回来执行当前线程的代码，通过程序计数器可以知道应该执行哪一句指令
+不会存在内存溢出
+
+
+
+虚拟机栈
+定义：
+每个线程运行需要的内存空间，成为虚拟机栈
+每个栈由多个栈帧组成，对应着每次调用方法时占用的内存
+每个线程只有一个活动栈帧，对应着当前正在执行的方法
+
+
+问题辨析：
+垃圾回收是否涉及栈内存：不需要，因为虚拟机栈是由一个个栈帧组成的，在方法执行完毕后，栈帧会被自动弹出，所以无需通过垃圾回收机制 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/03/17/%E7%8C%AA%E7%8C%AA%E9%98%BF%E5%A8%9C%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0/" title="猪猪阿娜饲养日记"><img class="post_bg" src="/img/megumi/megumi.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="猪猪阿娜饲养日记"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/17/%E7%8C%AA%E7%8C%AA%E9%98%BF%E5%A8%9C%E9%A5%B2%E5%85%BB%E6%97%A5%E8%AE%B0/" title="猪猪阿娜饲养日记">猪猪阿娜饲养日记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-17T03:21:25.000Z" title="发表于 2022-03-17 11:21:25">2022-03-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-24T03:37:55.273Z" title="更新于 2022-05-24 11:37:55">2022-05-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%8C%AA%E7%8C%AA%E9%98%BF%E5%A8%9C/">猪猪阿娜</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%8C%AA%E7%8C%AA%E9%98%BF%E5%A8%9C/">猪猪阿娜</a></span></div><div class="content">猪猪阿娜饲养日记2022&#x2F;3&#x2F;25
+​	今天是摆烂的第七天了，从公司离开也一周时间了，明明知道这样是不行的，确实除了打球、睡觉、打游戏、吃饭，生活四点一线，是谁都觉得不对劲了。阿娜明明觉得我不对劲了，也是小心翼翼地提醒我，虽然我知道都是我的不对，但是心里还是多少有点不太得劲。怎么说呢，就像不被人看好一般，不过也确实，这样的我凭什么让人放心和看好。也不知道会不会继续摆烂，但是确实不应该摆烂了。我打心里厌恶摆烂这个词，回想3年前这个词又怎么会和我扯上丝毫联系。我不想也不愿再这么下去。
+​	和阿娜的见面也因为疫情的原因，应该是要被延后了。哈哈哈，倒计时也没有了动力。这一周和阿娜的时间似乎也因为游戏变得那么的不真实，以至于想要去回想，却又怎么也想不起来。这一周我打心里对不起自己，对不起任何人。
+​	我其实在害怕，也在迷茫。我害怕阿娜因为我身上的希望靠近我，我因为我身上的希望离开我，我害怕有一天变成自己不喜欢的样子，变成阿娜不喜欢的样子。
+​	因此，我希望这是新的一周，好好锻炼积极生活，努力做好自己的每一件事。
+
+
+2022&#x2F;3&#x2F;26
+​	猪头阿娜，昨天难 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/03/16/Git/" title="Git"><img class="post_bg" src="/img/git/git.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/16/Git/" title="Git">Git</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-16T03:21:25.000Z" title="发表于 2022-03-16 11:21:25">2022-03-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-25T09:30:41.870Z" title="更新于 2022-03-25 17:30:41">2022-03-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/git/">git</a></span></div><div class="content">Git
+git文档位置： 【金山文档】 Githttps://kdocs.cn/l/ciKdDGYkYaWr
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/03/16/%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B/" title="线程与进程"><img class="post_bg" src="/img/thread/thread.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="线程与进程"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/16/%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B/" title="线程与进程">线程与进程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-16T03:21:25.000Z" title="发表于 2022-03-16 11:21:25">2022-03-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-25T09:28:56.904Z" title="更新于 2022-03-25 17:28:56">2022-03-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E8%BF%9B%E7%A8%8B/">进程</a></span></div><div class="content">线程与进程
+转载自：https://gitee.com/gu_chun_bo/java-construct/blob/master/java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/java%E5%B9%B6%E5%8F%911.md
+修改自：Megumi
+
+1. 进程与线程进程
+
+程序由指令和数据组成，但是这些指令要运行，数据要读写，就必须将指令加载到cpu，数据加载至内存。在指令运行过程中还需要用到磁盘，网络等设备，进程就是用来加载指令管理内存管理IO的
+当一个指令被运行，从磁盘加载这个程序的代码到内存，这时候就开启了一个进程
+进程就可以视为程序的一个实例，大部分程序都可以运行多个实例进程（例如记事本，浏览器等），部分只可以运行一个实例进程（例如360安全卫士）
+
+
+线程
+一个进程之内可以分为一到多个线程。
+一个线程就是一个指令流，将指令流中的一条条指令以一定的顺序交给 CPU 执行
+Java 中，线程作为最小调度单位，进程作为资源分配的最小单位。 在 windows 中进程是不活动的，只是作为线程的容器（这里感觉要学了计算机组成原理之后会更有感觉吧 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/03/08/%E7%AE%97%E6%B3%95&amp;&amp;%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="算法&amp;&amp;数据结构"><img class="post_bg" src="/img/algorithm/algorithm.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="算法&amp;&amp;数据结构"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/08/%E7%AE%97%E6%B3%95&amp;&amp;%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="算法&amp;&amp;数据结构">算法&amp;&amp;数据结构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-08T03:21:25.000Z" title="发表于 2022-03-08 11:21:25">2022-03-08</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-17T09:45:23.166Z" title="更新于 2022-03-17 17:45:23">2022-03-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><div class="content">1.算法&amp;&amp;数据结构1. 概述1. 数据结构的分类1. 逻辑结构：
+
+逻辑结构
+线性结构
+树形结构
+图形结构
+
+
+2. 算法分析
+
+时间
+空间
+
+
+3. 时间复杂度分析：
+传统的用计算机计时器分析(不太理想)
+Long begin = System.currentTimeMills();Long end = System.cuttentTimeMills();Long time = end - begin;
+
+渐进增长
+
+
+算法常数操作忽略不计
+最高次项相乘常熟忽略
+只保留最高项
+
+
+
+常见大O项
+
+
+线性阶
+平方阶
+对数阶
+立方阶
+常数阶
+
+
+
+函数调用的时间复杂度
+
+
+O(1)(输出)
+private static void show(int i) &#123; System.out.println(i); &#125;
+
+
+
+O(n)(循环)
+public static void main(String[] args) &#123;     int n=100;     for (int i = 0; i &lt; n; i++)     &#123;       ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/03/03/SVN/" title="SVN"><img class="post_bg" src="/img/svn/svn.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SVN"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/03/SVN/" title="SVN">SVN</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-03T12:26:25.000Z" title="发表于 2022-03-03 20:26:25">2022-03-03</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-08T03:22:38.196Z" title="更新于 2022-03-08 11:22:38">2022-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/svn/">svn</a></span></div><div class="content">SVN1.概述
+全称SubVersion
+操作简单，入门容易
+支持跨平台操作
+支持版本回退功能（时间机器）
+
+
+软件网址：
+服务端：http://www.visualsvn.com/
+客户端：http://tortoisesvn.net/downloads
+
+2.指令1.Checkout(检出)
+第一次与服务器连接都需要
+更新数据到本地
+
+
+2.Update(更新)
+更新数据到本地
+
+
+3.Commit(提交)
+提交数据到服务器
+
+
+3.创建版本仓库
+
+svnadmin create Shop
+
+
+
+
+
+进行服务器端监管
+
+svn-&gt;svn:&#x2F;&#x2F;localhost或ip地址访问到相关数据仓库
+基本语法：
+svnserve -d（后台运行） -r(监管目录) 版本仓库路径
+
+
+
+
+权限控制
+默认情况下，SVN不允许匿名用户上传文件的，修改svnserve.conf
+
+
+
+anon-access = write
+
+
+
+SVN客户端软件安装与使用
+使用客户端软件连接SVN服务器（CheckOut)
+
+
+4.使用详解1. 检出操作2. Commit操作3. Updat ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/megumi.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Megumi</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Wthah" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2425846572@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">超爱阿娜脑婆</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/25/Linux%E8%84%9A%E6%9C%AC/" title="Linux脚本"><img src="/img/sh/sh.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux脚本"/></a><div class="content"><a class="title" href="/2022/05/25/Linux%E8%84%9A%E6%9C%AC/" title="Linux脚本">Linux脚本</a><time datetime="2022-05-25T03:21:25.000Z" title="发表于 2022-05-25 11:21:25">2022-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/25/%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E5%B0%8F%E7%AC%94%E8%AE%B0/" title="工作经验小笔记"><img src="/img/work/work.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="工作经验小笔记"/></a><div class="content"><a class="title" href="/2022/05/25/%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E5%B0%8F%E7%AC%94%E8%AE%B0/" title="工作经验小笔记">工作经验小笔记</a><time datetime="2022-05-25T03:21:25.000Z" title="发表于 2022-05-25 11:21:25">2022-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/17/%E5%8F%91%E5%B1%95%E5%AF%B9%E8%B1%A1%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/" title="发展对象理论知识"><img src="/img/china/china.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="发展对象理论知识"/></a><div class="content"><a class="title" href="/2022/05/17/%E5%8F%91%E5%B1%95%E5%AF%B9%E8%B1%A1%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/" title="发展对象理论知识">发展对象理论知识</a><time datetime="2022-05-17T03:21:25.000Z" title="发表于 2022-05-17 11:21:25">2022-05-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/15/ZLMediaKit+WVP-GB28281-pro%E9%83%A8%E7%BD%B2/" title="ZLMediaKit+WVP-GB28281-pro部署"><img src="/img/media/media.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ZLMediaKit+WVP-GB28281-pro部署"/></a><div class="content"><a class="title" href="/2022/05/15/ZLMediaKit+WVP-GB28281-pro%E9%83%A8%E7%BD%B2/" title="ZLMediaKit+WVP-GB28281-pro部署">ZLMediaKit+WVP-GB28281-pro部署</a><time datetime="2022-05-15T03:21:25.000Z" title="发表于 2022-05-15 11:21:25">2022-05-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/13/SIP%E6%9C%8D%E5%8A%A1%E6%8E%A5%E5%8F%A3/" title="SIP服务接口"><img src="/img/api/api.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SIP服务接口"/></a><div class="content"><a class="title" href="/2022/05/13/SIP%E6%9C%8D%E5%8A%A1%E6%8E%A5%E5%8F%A3/" title="SIP服务接口">SIP服务接口</a><time datetime="2022-05-13T03:21:25.000Z" title="发表于 2022-05-13 11:21:25">2022-05-13</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/SQL%E8%B0%83%E4%BC%98/"><span class="card-category-list-name">SQL调优</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/jvm/"><span class="card-category-list-name">jvm</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%85%A5%E5%85%9A%E6%9D%90%E6%96%99/"><span class="card-category-list-name">入党材料</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"><span class="card-category-list-name">多线程</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/"><span class="card-category-list-name">日常</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"><span class="card-category-list-name">版本控制</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%8C%AA%E7%8C%AA%E9%98%BF%E5%A8%9C/"><span class="card-category-list-name">猪猪阿娜</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Docker/" style="font-size: 1.15em; color: rgb(150, 145, 114)">Docker</a><a href="/tags/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/" style="font-size: 1.45em; color: rgb(110, 58, 97)">项目部署</a><a href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/" style="font-size: 1.45em; color: rgb(78, 139, 37)">版本控制</a><a href="/tags/git/" style="font-size: 1.15em; color: rgb(53, 176, 96)">git</a><a href="/tags/Linux/" style="font-size: 1.15em; color: rgb(177, 47, 26)">Linux</a><a href="/tags/sh/" style="font-size: 1.15em; color: rgb(94, 35, 1)">sh</a><a href="/tags/Nginx/" style="font-size: 1.15em; color: rgb(72, 9, 52)">Nginx</a><a href="/tags/jvm/" style="font-size: 1.15em; color: rgb(32, 21, 162)">jvm</a><a href="/tags/java/" style="font-size: 1.15em; color: rgb(55, 71, 105)">java</a><a href="/tags/svn/" style="font-size: 1.15em; color: rgb(193, 70, 174)">svn</a><a href="/tags/WVP/" style="font-size: 1.15em; color: rgb(62, 162, 46)">WVP</a><a href="/tags/Selenium/" style="font-size: 1.15em; color: rgb(129, 159, 111)">Selenium</a><a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/" style="font-size: 1.15em; color: rgb(13, 164, 142)">自动化测试</a><a href="/tags/ZLMediaKit/" style="font-size: 1.15em; color: rgb(192, 163, 7)">ZLMediaKit</a><a href="/tags/WVP-GB28281-pro/" style="font-size: 1.15em; color: rgb(155, 12, 83)">WVP-GB28281-pro</a><a href="/tags/%E5%8F%91%E5%B1%95%E5%AF%B9%E8%B1%A1/" style="font-size: 1.15em; color: rgb(126, 178, 106)">发展对象</a><a href="/tags/Mysql/" style="font-size: 1.15em; color: rgb(63, 88, 105)">Mysql</a><a href="/tags/sql%E8%B0%83%E4%BC%98/" style="font-size: 1.15em; color: rgb(61, 38, 18)">sql调优</a><a href="/tags/%E7%8C%AA%E7%8C%AA%E9%98%BF%E5%A8%9C/" style="font-size: 1.15em; color: rgb(9, 166, 93)">猪猪阿娜</a><a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 1.15em; color: rgb(99, 44, 143)">工作</a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.15em; color: rgb(182, 161, 3)">算法</a><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.15em; color: rgb(141, 123, 99)">数据结构</a><a href="/tags/%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E7%AE%A1%E7%90%86/" style="font-size: 1.15em; color: rgb(79, 154, 144)">软件过程管理</a><a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.15em; color: rgb(180, 34, 84)">多线程</a><a href="/tags/%E8%BF%9B%E7%A8%8B/" style="font-size: 1.15em; color: rgb(124, 9, 15)">进程</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">6</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">16</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-03-02T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-05-29T08:13:52.459Z"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/2.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 By Megumi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["Megumi"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = 'Megumi'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
