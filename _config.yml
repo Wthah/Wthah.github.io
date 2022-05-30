@@ -104,5 +104,5 @@ theme: butterfly
 deploy:
   type: git
   repository: https://github.com/Wthah/Wthah.github.io.git
-  branch: main
+  branch: master
 
