@@ -118,6 +118,8 @@ date: 2022-03-05 13:05:27
 
   class_desc: 学习清单
 
+  link_list:
+
     - name: alipay wx(2022-6-6)
 
       link: https://blog.csdn.net/qq_44697754/article/details/115607920?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165449985616782248572187%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165449985616782248572187&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-115607920-null-null.142^v11^pc_search_result_control_group,157^v13^new_style2&utm_term=%E6%94%AF%E4%BB%98%E5%AE%9D&spm=1018.2226.3001.4187
@@ -129,7 +131,7 @@ date: 2022-03-05 13:05:27
     - name: swagger(2022-6-6)
 
     - name: math-two(2022-6-6)
-
+  
     - name: springsecurity(2022-6-6\7)
   
     - name: page(2022-6-6\7)
