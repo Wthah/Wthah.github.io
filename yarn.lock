@@ -129,6 +129,11 @@
   "resolved" "https://registry.npmjs.org/acorn/-/acorn-4.0.13.tgz"
   "version" "4.0.13"
 
+"add@^2.0.6":
+  "integrity" "sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q=="
+  "resolved" "https://registry.npmmirror.com/add/-/add-2.0.6.tgz"
+  "version" "2.0.6"
+
 "agent-base@6":
   "integrity" "sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ=="
   "resolved" "https://registry.npmmirror.com/agent-base/-/agent-base-6.0.2.tgz"
@@ -1348,7 +1353,7 @@
 
 "hexo-wordcount@^6.0.1":
   "integrity" "sha512-tbo2P9xRWEKQmRf7+XuPjx9It1MnaE26nA+EEb2DN39gK1x+26W7Nm4Iyp4AugQjBWYYDx7OLn4gp1WFxQpQew=="
-  "resolved" "https://registry.npmjs.org/hexo-wordcount/-/hexo-wordcount-6.0.1.tgz"
+  "resolved" "https://registry.npmmirror.com/hexo-wordcount/-/hexo-wordcount-6.0.1.tgz"
   "version" "6.0.1"
 
 "hexo@^6.2.0":
@@ -2003,6 +2008,11 @@
     "prelude-ls" "~1.1.2"
     "type-check" "~0.3.2"
     "word-wrap" "~1.2.3"
+
+"or@^0.2.0":
+  "integrity" "sha512-BHB8VZq2isxkyRaCBZ6CZCbQBzCT+gy8LPiqdbMH1+Fd6biFj3v8ebjeYzzL51PbsApsPYnGegGTO6KLQMxxDw=="
+  "resolved" "https://registry.npmmirror.com/or/-/or-0.2.0.tgz"
+  "version" "0.2.0"
 
 "parse5@6.0.1":
   "integrity" "sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw=="
@@ -2959,3 +2969,8 @@
     "string-width" "^4.2.0"
     "y18n" "^5.0.5"
     "yargs-parser" "^20.2.2"
+
+"yarn@^1.22.19":
+  "integrity" "sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ=="
+  "resolved" "https://registry.npmmirror.com/yarn/-/yarn-1.22.19.tgz"
+  "version" "1.22.19"
