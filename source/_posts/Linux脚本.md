@@ -6,7 +6,7 @@ tags:
   - sh
 categories:
   - Linux
-cover: /img/sh/sh.jpg
+cover: /img/linux/sh.jpg
 ---
 
 

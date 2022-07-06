@@ -93,7 +93,7 @@ index_img: /img/21.png
 default_top_img:
 
 # The banner image of archive page
-archive_img: /img/15.jpg
+archive_img: /img/27.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
