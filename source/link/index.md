@@ -1,6 +1,6 @@
 ---
 title: link
-top_img: /img/27.jpg
+top_img: /img/50.png
 date: 2022-03-05 13:05:27
 ---
 
