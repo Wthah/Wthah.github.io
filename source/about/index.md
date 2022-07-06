@@ -83,5 +83,3 @@ git push origin hexo
 # 最后编译部署到master分支
 hexo g -d
 ```
-
-## 
