@@ -492,7 +492,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://i.pximg.net/img-original/img/2022/05/19/13/59/38/98449750_p0.png)
+background: url(https://wthah.github.io/img/52.png)
 
 # Footer Background
 footer_bg: true
