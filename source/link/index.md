@@ -86,6 +86,30 @@ date: 2022-03-05 13:05:27
       link: http://106.12.114.76:8888/70ca75b5
   
       avatar: /img/link/baota.png
+      
+    - name: pdf操作
+  
+      link: https://www.ilovepdf.com/zh-cn
+  
+      avatar: /img/link/
+  
+    - name: ppt操作
+  
+      link: https://www.pptsupermarket.com/
+  
+      avatar: /img/link/
+  
+    - name: 海报
+  
+      link: https://www.canva.cn/
+  
+      avatar: /img/link/
+  
+    - name: 传输文件
+  
+      link: https://airportal.cn/
+  
+      avatar: /img/link/
   
 - class_name: 废弃网站
 
